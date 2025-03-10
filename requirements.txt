@@ -1,5 +1,4 @@
 asgiref==3.8.1
-asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
 crispy-bootstrap5==2024.10
 decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
 Django==5.1.5
