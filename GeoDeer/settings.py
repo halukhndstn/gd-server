@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import environ
+import os
 
 env = environ.Env()
 environ.Env.read_env()
@@ -153,3 +154,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage' 
+
+GDAL_LIBRARY_PATH = os.getenv("GDAL_LIBRARY_PATH", "/usr/lib/libgdal.so")
+GEOS_LIBRARY_PATH = os.getenv("GEOS_LIBRARY_PATH", "/usr/lib/libgeos_c.so")
